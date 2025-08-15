@@ -1,17 +1,27 @@
 package com.aditya;
+import com.google.gson.*;
 
-import com.aditya.Helper.Helper;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        System.out.println("Hello From maven");
-        Helper.help();
+class User {
+    String name;
+    int age;
+
+    User(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
+
+public class App 
+{
+    public static void main(String[] args) {
+        User user = new User( "Aditya", 21 );
+
+        Gson gson = new Gson();
+        String userData = gson.toJson( user );
+
+        System.out.println(userData);
+    }
+}
+
+
