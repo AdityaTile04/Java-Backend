@@ -7,8 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="my.app" />
-        <module name="maven-child1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-child1" target="24" />
+      <module name="maven-child2" target="1.8" />
+      <module name="maven-parent" target="24" />
+      <module name="Project" target="24" />
+    </bytecodeTargetLevel>
   </component>
 </project>
