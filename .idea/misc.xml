@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/maven-parent/pom.xml" />
         <option value="$PROJECT_DIR$/maven-child2/pom.xml" />
         <option value="$PROJECT_DIR$/Project/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernet/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
