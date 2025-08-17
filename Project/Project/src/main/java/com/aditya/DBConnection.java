@@ -1,4 +1,4 @@
-package com.project;
+package com.aditya;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

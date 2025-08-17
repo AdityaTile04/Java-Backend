@@ -1,4 +1,4 @@
-package com.project;
+package com.aditya;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

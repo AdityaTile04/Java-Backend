@@ -1,4 +1,4 @@
-package com.project;
+package com.aditya;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -12,7 +12,7 @@ public class Main {
        s.setTech( "Gen AI" );
 
         Configuration config = new Configuration();
-        config.addAnnotatedClass( com.project.Student.class);
+        config.addAnnotatedClass( com.aditya.Student.class);
         config.configure();
 
         SessionFactory factory = config.buildSessionFactory();

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="my.app" />
         <module name="Hibernet" />
+        <module name="Hibernate_part_II" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
