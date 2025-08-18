@@ -1,20 +1,14 @@
 package com.aditya;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
 
-@Entity(name = "student_table")
+@Entity
 public class StudentDetails {
     @Id
-    @Column(name="s_id")
     private int id;
-    @Column(name = "s_name")
     private String name;
-    @Column(name = "s_age")
-    @Transient
     private int age;
+    private Laptop laptop;
 
     public int getId() {
         return id;
@@ -40,12 +34,21 @@ public class StudentDetails {
         this.age = age;
     }
 
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     @Override
     public String toString() {
         return "StudentDetails{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
+                ", laptop=" + laptop +
                 '}';
     }
 }
