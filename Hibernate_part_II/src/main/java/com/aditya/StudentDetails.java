@@ -13,7 +13,6 @@ public class StudentDetails {
     @Column(name = "s_name")
     private String name;
     @Column(name = "s_age")
-
     @Transient
     private int age;
 
