@@ -10,7 +10,7 @@ public class StudentDetails {
     private int id;
     private String name;
     private int age;
-    @OneToMany(mappedBy = "studentDetails")
+    @ManyToMany(mappedBy = "studentDetails")
     private List<Laptop> laptops;
 
     public int getId() {

@@ -2,7 +2,10 @@ package com.aditya;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.ManyToMany;
+
+
+import java.util.List;
 
 @Entity
 public class Laptop {
@@ -12,8 +15,8 @@ public class Laptop {
     private String model;
     private String g_card;
     private long price;
-    @ManyToOne
-    private StudentDetails studentDetails;
+    @ManyToMany
+    private List<StudentDetails> studentDetails;
 
     public int getLid() {
         return lid;
@@ -55,11 +58,11 @@ public class Laptop {
         this.price = price;
     }
 
-    public StudentDetails getStudentDetails() {
+    public List<StudentDetails> getStudentDetails() {
         return studentDetails;
     }
 
-    public void setStudentDetails(StudentDetails studentDetails) {
+    public void setStudentDetails(List<StudentDetails> studentDetails) {
         this.studentDetails = studentDetails;
     }
 
