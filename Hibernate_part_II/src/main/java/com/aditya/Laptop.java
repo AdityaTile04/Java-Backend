@@ -1,13 +1,24 @@
 package com.aditya;
 
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Embeddable
+@Entity
 public class Laptop {
+    @Id
+    private int lid;
     private String brand;
     private String model;
     private String g_card;
     private long price;
+
+    public int getLid() {
+        return lid;
+    }
+
+    public void setLid(int lid) {
+        this.lid = lid;
+    }
 
     public String getBrand() {
         return brand;
@@ -44,7 +55,8 @@ public class Laptop {
     @Override
     public String toString() {
         return "Laptop{" +
-                "brand='" + brand + '\'' +
+                "lid=" + lid +
+                ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", g_card='" + g_card + '\'' +
                 ", price=" + price +

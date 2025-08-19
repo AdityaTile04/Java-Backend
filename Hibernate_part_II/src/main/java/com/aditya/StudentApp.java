@@ -9,25 +9,28 @@ public class StudentApp {
     public static void main(String[] args) {
 
         Laptop laptop = new Laptop();
-        laptop.setBrand( "Apple" );
-        laptop.setModel( "Macbook Air M3" );
-        laptop.setG_card( "None" );
-        laptop.setPrice( 160000 );
+        laptop.setLid( 2 );
+        laptop.setBrand( "Asus" );
+        laptop.setModel( "Vivobook" );
+        laptop.setG_card( "RTX3050" );
+        laptop.setPrice( 700000 );
 
         StudentDetails sd = new StudentDetails();
-        sd.setId( 103 );
-        sd.setName( "Rushi Rajapure" );
+        sd.setId( 104 );
+        sd.setName( "Kunal" );
         sd.setAge( 22 );
         sd.setLaptop( laptop );
 
         SessionFactory sessionFactory = new Configuration()
                 .addAnnotatedClass( com.aditya.StudentDetails.class )
+                .addAnnotatedClass( com.aditya.Laptop.class )
                 .configure()
                 .buildSessionFactory();
 
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
+        session.persist( laptop );
         session.persist( sd );
         transaction.commit();
         session.close();

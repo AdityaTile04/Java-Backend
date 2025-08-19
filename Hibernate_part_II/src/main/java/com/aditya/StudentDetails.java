@@ -2,13 +2,17 @@ package com.aditya;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class StudentDetails {
     @Id
     private int id;
     private String name;
     private int age;
-    private Laptop laptop;
+    @OneToOne
+    private List<Laptop> laptops;
+
 
     public int getId() {
         return id;
@@ -34,12 +38,12 @@ public class StudentDetails {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public List<Laptop> getLaptops() {
+        return laptops;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setLaptops(List<Laptop> laptops) {
+        this.laptops = laptops;
     }
 
     @Override
@@ -48,7 +52,7 @@ public class StudentDetails {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", laptop=" + laptop +
+                ", laptop=" + laptops +
                 '}';
     }
 }
