@@ -10,7 +10,7 @@ public class StudentDetails {
     private int id;
     private String name;
     private int age;
-    @ManyToMany(mappedBy = "studentDetails")
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Laptop> laptops;
 
     public int getId() {
