@@ -2,6 +2,7 @@ package com.aditya;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Laptop {
@@ -11,6 +12,8 @@ public class Laptop {
     private String model;
     private String g_card;
     private long price;
+    @ManyToOne
+    private StudentDetails studentDetails;
 
     public int getLid() {
         return lid;
@@ -52,6 +55,14 @@ public class Laptop {
         this.price = price;
     }
 
+    public StudentDetails getStudentDetails() {
+        return studentDetails;
+    }
+
+    public void setStudentDetails(StudentDetails studentDetails) {
+        this.studentDetails = studentDetails;
+    }
+
     @Override
     public String toString() {
         return "Laptop{" +
@@ -60,6 +71,7 @@ public class Laptop {
                 ", model='" + model + '\'' +
                 ", g_card='" + g_card + '\'' +
                 ", price=" + price +
+                ", studentDetails=" + studentDetails +
                 '}';
     }
 }

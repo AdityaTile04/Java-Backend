@@ -10,9 +10,8 @@ public class StudentDetails {
     private int id;
     private String name;
     private int age;
-    @OneToOne
+    @OneToMany(mappedBy = "studentDetails")
     private List<Laptop> laptops;
-
 
     public int getId() {
         return id;

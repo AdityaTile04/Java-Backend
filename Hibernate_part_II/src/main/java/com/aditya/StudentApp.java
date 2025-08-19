@@ -5,21 +5,34 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import java.util.Arrays;
+
 public class StudentApp {
     public static void main(String[] args) {
 
         Laptop laptop = new Laptop();
-        laptop.setLid( 2 );
-        laptop.setBrand( "Asus" );
-        laptop.setModel( "Vivobook" );
-        laptop.setG_card( "RTX3050" );
-        laptop.setPrice( 700000 );
+        laptop.setLid( 5 );
+        laptop.setBrand( "HP" );
+        laptop.setModel( "Victus" );
+        laptop.setG_card( "GTX1015" );
+        laptop.setPrice( 70000 );
+
+        Laptop laptop2 = new Laptop();
+        laptop2.setLid( 4 );
+        laptop2.setBrand( "Dell" );
+        laptop2.setModel( "Alienware" );
+        laptop2.setG_card( "RTX4050" );
+        laptop2.setPrice( 140000 );
+
 
         StudentDetails sd = new StudentDetails();
-        sd.setId( 104 );
-        sd.setName( "Kunal" );
+        sd.setId( 105 );
+        sd.setName( "gaurav" );
         sd.setAge( 22 );
-        sd.setLaptop( laptop );
+        sd.setLaptops( Arrays.asList( laptop, laptop2 ) );
+
+        laptop.setStudentDetails( sd );
+        laptop2.setStudentDetails( sd );
 
         SessionFactory sessionFactory = new Configuration()
                 .addAnnotatedClass( com.aditya.StudentDetails.class )
@@ -31,6 +44,7 @@ public class StudentApp {
         Transaction transaction = session.beginTransaction();
 
         session.persist( laptop );
+        session.persist( laptop2 );
         session.persist( sd );
         transaction.commit();
         session.close();
