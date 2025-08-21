@@ -14,6 +14,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>jaxb</artifactId>
+                <version>jaxb-runtime</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.mysql</groupId>
@@ -26,6 +36,13 @@
             <artifactId>hibernate-core</artifactId>
             <version>6.5.3.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>3.10.8</version>
+        </dependency>
+
     </dependencies>
 
 </project>
