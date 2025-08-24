@@ -4,8 +4,11 @@
           http://www.springframework.org/schema/beans
           https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="student1" class="com.aditya.Student" scope="prototype" />
-    <bean id="student2" class="com.aditya.Student" scope="prototype" />
-    <bean id="laptop" class="com.aditya.Laptop" />
+    <bean id="student" class="com.aditya.Student">
+        <property name="age" value="21" />
+    </bean>
+    <bean id="laptop" class="com.aditya.Laptop">
+    <property name="brand" value="Apple" />
+    </bean>
 
 </beans>
