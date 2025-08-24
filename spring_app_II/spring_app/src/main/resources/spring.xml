@@ -3,12 +3,12 @@
        xsi:schemaLocation="
           http://www.springframework.org/schema/beans
           https://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="student" class="com.aditya.Student">
-        <property name="age" value="21" />
-        <property name="lap" ref="laptop" />
+<!--Setter Injection-->
+    <bean id="student" class="com.aditya.Student" autowire="byName">
+       <property name="computer" ref="computer"/>
     </bean>
-    <bean id="laptop" class="com.aditya.Laptop"/>
+
+    <bean id="computer" class="com.aditya.Desktop"/>
 
 <!--    Constructor injection-->
     <bean id="car" class="com.aditya.Car">

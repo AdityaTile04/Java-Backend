@@ -4,6 +4,7 @@ public class Student {
 
    private int age;
    private Laptop laptop;
+    private Computer computer;
 
     public Student() {
         System.out.println("Student object is created");
@@ -29,7 +30,17 @@ public class Student {
         laptop.code();
     }
 
-    public void printName() {
-        System.out.println("Aditya Tile");
+    public Computer getComputer() {
+        return computer;
+    }
+
+    public void setComputer(Computer computer) {
+        computer.compile();
+        this.computer = computer;
+    }
+
+    public void code() {
+        computer.compile();
+        System.out.println("Aditya is coding....");
     }
 }

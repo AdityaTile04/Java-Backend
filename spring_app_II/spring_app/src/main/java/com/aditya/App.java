@@ -9,8 +9,8 @@ public class App
     {
        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Car c = context.getBean( "car", Car.class );
-        System.out.println(c.carBrand + " " + c.model);
+        Student s = context.getBean( "student",Student.class );
+        s.code();
 
     }
 }
