@@ -6,9 +6,15 @@
 
     <bean id="student" class="com.aditya.Student">
         <property name="age" value="21" />
+        <property name="lap" ref="laptop" />
     </bean>
-    <bean id="laptop" class="com.aditya.Laptop">
-    <property name="brand" value="brand" />
+    <bean id="laptop" class="com.aditya.Laptop"/>
+
+<!--    Constructor injection-->
+    <bean id="car" class="com.aditya.Car">
+        <constructor-arg value="BMW"/>
+        <constructor-arg value="M8"/>
     </bean>
+
 
 </beans>

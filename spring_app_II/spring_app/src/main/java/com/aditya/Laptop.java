@@ -16,7 +16,7 @@ public class Laptop {
         this.brand = brand;
     }
 
-    public void compile() {
+    public void code() {
         System.out.println("compiling....");
     }
 }
