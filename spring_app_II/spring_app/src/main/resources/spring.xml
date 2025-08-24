@@ -8,13 +8,12 @@
        <property name="computer" ref="computer"/>
     </bean>
 
-    <bean id="computer" class="com.aditya.Desktop"/>
+    <bean id="computer" class="com.aditya.Desktop" lazy-init="true"/>
+<!--    <bean id="computer" class="com.aditya.Laptop"/>-->
 
 <!--    Constructor injection-->
     <bean id="car" class="com.aditya.Car">
         <constructor-arg value="BMW"/>
         <constructor-arg value="M8"/>
     </bean>
-
-
 </beans>
