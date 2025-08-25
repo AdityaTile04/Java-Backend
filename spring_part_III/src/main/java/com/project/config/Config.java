@@ -10,14 +10,17 @@ import org.springframework.context.annotation.Scope;
 public class Config {
 
 
-    @Bean()
-    @Scope("prototype")
+    @Bean
     public Desktop desktop () {
-        return new Desktop();
+        Desktop d = new Desktop();
+        d.setBrand( "Dell" );
+        return d;
     }
 
-    @Bean(name = "student1")
+    @Bean
     public Student student() {
-        return new Student();
+        Student s = new Student();
+        s.setAge( 21 );
+        return s;
     }
 }
