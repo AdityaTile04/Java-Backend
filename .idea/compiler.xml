@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="my.app" />
         <module name="Hibernate_part_III" />
+        <module name="spring_part_III" />
         <module name="Hibernet" />
         <module name="Hibernate_part_II" />
       </profile>

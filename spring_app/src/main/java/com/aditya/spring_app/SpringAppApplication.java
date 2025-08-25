@@ -13,6 +13,7 @@ public class SpringAppApplication {
 		Alien a = context.getBean( Alien.class );
 		a.code();
 
+
 	}
 
 }

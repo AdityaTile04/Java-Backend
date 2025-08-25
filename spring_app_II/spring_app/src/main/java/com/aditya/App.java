@@ -8,10 +8,8 @@ public class App
     public static void main( String[] args )
     {
        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-
-//        Student s = context.getBean( "student",Student.class );
-//        s.code();
-
+        Student s = context.getBean( "student",Student.class );
+        s.code();
         Desktop d = context.getBean( "computer", Desktop.class );
         d.compile();
 
