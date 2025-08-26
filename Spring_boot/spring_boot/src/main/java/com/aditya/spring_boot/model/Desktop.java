@@ -1,6 +1,5 @@
-package com.aditya.spring_boot;
+package com.aditya.spring_boot.model;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component

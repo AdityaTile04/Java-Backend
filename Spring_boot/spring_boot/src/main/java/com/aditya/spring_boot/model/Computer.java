@@ -1,4 +1,4 @@
-package com.aditya.spring_boot;
+package com.aditya.spring_boot.model;
 
 import org.springframework.stereotype.Component;
 
