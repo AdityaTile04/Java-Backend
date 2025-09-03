@@ -7,12 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <form action="add">
-        <label for="n1">Enter 1st Number:</label>
-        <input type="text" id="n1" name="number1" />
+    <form action="addStudent">
+        <label for="n1">Enter Id:</label>
+        <input type="text" id="sid" name="sid" />
 
-        <label for="n2">Enter 2nd Number:</label>
-        <input type="text" id="n2" name="number2" />
+        <label for="n2">Enter Name:</label>
+        <input type="text" id="sname" name="sname" />
 
         <input type="submit" value="Submit"/>
     </form>

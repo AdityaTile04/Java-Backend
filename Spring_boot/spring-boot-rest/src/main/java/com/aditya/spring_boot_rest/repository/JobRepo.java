@@ -1,7 +1,6 @@
-package com.project.jobApp.repository;
+package com.aditya.spring_boot_rest.repository;
 
-
-import com.project.jobApp.model.JobPost;
+import com.aditya.spring_boot_rest.model.JobPost;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -12,7 +11,6 @@ import java.util.List;
 public class JobRepo {
 
 
-    // ArrayList to store JobPost objects
     List<JobPost> jobs = new ArrayList<>(Arrays.asList(
 
             new JobPost(1, "Java Developer", "Must have good experience in core Java and advanced Java", 2,
@@ -35,17 +33,43 @@ public class JobRepo {
                     List.of("iOS Development", "Android Development", "Mobile App"))
     ));
 
-    // method to return all JobPosts
     public List<JobPost> getAllJobs() {
         return jobs;
     }
 
-    // method to save a job post object into arrayList
+
     public void addJob(JobPost job) {
         jobs.add(job);
         System.out.println(jobs);
 
     }
 
+    public JobPost getJob(int postId) {
 
+        for(JobPost job : jobs) {
+            if(job.getPostId() == postId) {
+                return job;
+            }
+        }
+        return null;
+    }
+
+    public void updateJob(JobPost jobPost) {
+        for(JobPost jp : jobs) {
+            if(jp.getPostId() == jobPost.getPostId()) {
+                jp.setPostProfile( jobPost.getPostProfile() );
+                jp.setPostDesc( jobPost.getPostDesc() );
+                jp.setReqExperience( jobPost.getReqExperience() );
+                jp.setPostTechStack( jobPost.getPostTechStack() );
+            }
+        }
+    }
+
+    public void deleteJob(int postId) {
+        for(JobPost jp : jobs) {
+            if(jp.getPostId() == postId) {
+                jobs.remove( jp );
+            }
+        }
+    }
 }

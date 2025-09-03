@@ -1,4 +1,4 @@
-package com.project.jobApp.model;
+package com.aditya.spring_boot_rest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

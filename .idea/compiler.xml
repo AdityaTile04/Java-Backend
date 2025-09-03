@@ -11,6 +11,7 @@
         <module name="spring_part_III" />
         <module name="Hibernet" />
         <module name="Hibernate_part_II" />
+        <module name="servelets" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
