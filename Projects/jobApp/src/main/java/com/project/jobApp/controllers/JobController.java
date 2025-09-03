@@ -13,8 +13,13 @@ import java.util.List;
 @Controller
 public class JobController {
 
+    private final JobService service;
+
     @Autowired
-    private JobService service;
+    public JobController(JobService service) {
+        this.service = service;
+    }
+
 
  @GetMapping({"/", "home"})
  public String home() {
@@ -28,8 +33,8 @@ public class JobController {
 
  @PostMapping("handleForm")
  public String handleForm(JobPost jobPost) {
-     service.addJob( jobPost );
-     return "success";
+     return service.addJob( jobPost );
+
  }
 
 @GetMapping("viewalljobs")
@@ -38,6 +43,12 @@ public class JobController {
     List<JobPost> jobs = service.getAllJobs();
     model.addAttribute( "jobPosts", jobs );
      return "viewalljobs";
+ }
+
+ @GetMapping("load")
+ public String loadData() {
+     service.load();
+     return "success";
  }
 
 }

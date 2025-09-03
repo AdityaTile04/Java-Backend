@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41427c8d-3d79-4c97-9b3a-530bf49122ca" name="Changes" comment="Started learning about spring_data_jpa and save data using jpa">
+    <list default="true" id="41427c8d-3d79-4c97-9b3a-530bf49122ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/controllers/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/controllers/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/model/JobPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/model/JobPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/repository/JobRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/repository/JobRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/src/main/java/com/project/jobApp/service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/jobApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/jobApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/controller/JobRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/controller/JobRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/model/JobPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/model/JobPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/repository/JobRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/repository/JobRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/src/main/java/com/aditya/spring_boot_rest/service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-rest/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-data-jpa/src/main/java/com/project/springdatajpa/SpringDataJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-data-jpa/src/main/java/com/project/springdatajpa/SpringDataJpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-data-jpa/src/main/java/com/project/springdatajpa/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-data-jpa/src/main/java/com/project/springdatajpa/repository/StudentRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AdityaTile04&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AdityaTile04/Java-Backend.git&quot;,
+    &quot;accountId&quot;: &quot;a8e5a669-b074-4f6f-bac1-a24caf71a899&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -30,10 +60,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="32BPg7rs0T8gnUd07v11VxPxroE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,27 +74,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "Spring Boot.SpringDataJpaApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java_Backend/Spring_Boot/spring_data_jpa/spring-data-jpa/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringDataJpaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java_Backend/Spring_Boot/spring_data_jpa/spring-data-jpa/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java_Backend\Spring_Boot\spring_data_jpa\spring-data-jpa\src\main\resources" />
@@ -101,7 +132,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756891103209</updated>
-      <workItem from="1756891107673" duration="4799000" />
+      <workItem from="1756891107673" duration="5763000" />
+      <workItem from="1756897047840" duration="655000" />
+      <workItem from="1756902603313" duration="52000" />
+      <workItem from="1756902679172" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Started learning about spring_data_jpa and save data using jpa">
       <option name="closed" value="true" />
@@ -127,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756894424139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="learn how to fetch data using jpa using various methods">
+      <option name="closed" value="true" />
+      <created>1756896227522</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756896227522</updated>
+    </task>
+    <task id="LOCAL-00005" summary="learn about update and delete methods in jpa">
+      <option name="closed" value="true" />
+      <created>1756897517438</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756897517438</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started learning about spring_data_jpa and save data using jpa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started learning about spring_data_jpa and save data using jpa" />
+    <MESSAGE value="learn how to fetch data using jpa using various methods" />
+    <MESSAGE value="learn about update and delete methods in jpa" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn about update and delete methods in jpa" />
   </component>
 </project>

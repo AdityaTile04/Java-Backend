@@ -24,6 +24,11 @@ public class JobRestController {
         return service.getJob( postId );
     }
 
+    @GetMapping("jobPost/keyword/{keyword}")
+    public List<JobPost>  searchByKeyword(@PathVariable("keyword") String keyword) {
+       return service.search(keyword);
+    }
+
     @PostMapping("jobPost")
     public JobPost jobPost(@RequestBody JobPost jobPost) {
          service.addJob( jobPost );
@@ -40,6 +45,12 @@ public class JobRestController {
     public String deleteJob(@PathVariable int postId) {
         service.deleteJob(postId);
         return "Post Deleted Successfully";
+    }
+
+    @GetMapping("load")
+    public String loadData() {
+        service.load();
+        return "Data Loaded successfully";
     }
 
 }
