@@ -32,8 +32,8 @@ public class JobController {
  }
 
  @PostMapping("handleForm")
- public String handleForm(JobPost jobPost) {
-     return service.addJob( jobPost );
+ public void handleForm(JobPost jobPost) {
+     service.addJob( jobPost );
 
  }
 
