@@ -1,18 +1,2 @@
-package com.project.spring_security.service;
-
-import com.project.spring_security.dao.UserRepo;
-import com.project.spring_security.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-@Service
-public class UserService {
-
-    @Autowired
-    private UserRepo userRepo;
-
-    public User saveUser(User user) {
-        return userRepo.save( user );
-    }
-
-}
+Client= 370539143718-u9b0il5b3o6hmdnd54089f032f5co5d1.apps.googleusercontent.com
+c_secret = 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
